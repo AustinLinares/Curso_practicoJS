@@ -1,31 +1,34 @@
+console.log("Hello, world!")
+
 
 function cuadrado(lado, unidad) {
-  var perimetro = lado * 4;
-  var area = lado * lado;
+  const perimetro = lado * 4;
+  const area = lado * lado;
   console.log(`El perimetro del cuadrado es: ${perimetro} ${unidad}`);
   console.log(`El área del cuadrado es ${area} ${unidad}²`);
 }
 
 
 function rectangulo(base, altura, unidad) {
-  var perimetro = base * 2 + altura * 2;
-  var area = base * altura;
+  const perimetro = base * 2 + altura * 2;
+  const area = base * altura;
   console.log(`El perimetro del rectángulo es: ${perimetro} ${unidad}`);
   console.log(`El área del rectángulo es ${area} ${unidad}²`);
 }
 
 
 function triangulo(lado1, lado2, lado3, unidad) {
-  var perimetro = lado1 + lado2 + lado3;
-  var S = (lado1 + lado2 + lado3)/2;
-  var area = Math.sqrt(S * (S - lado1) * (S - lado2) * (S-lado3));
+  const perimetro = lado1 + lado2 + lado3;
+  const S = (lado1 + lado2 + lado3)/2;
+  const area = Math.sqrt(S * (S - lado1) * (S - lado2) * (S-lado3));
   console.log(`El perimetro del triángulo es: ${perimetro} ${unidad}`);
   console.log(`El área del triángulo es ${area} ${unidad}²`);
 }
 
 function circunferencia(radio, unidad) {
-  var perimetro = 2 * radio * 3.1415;
-  var area = radio * radio * 3.1415;
+  const PI = Math.PI;
+  const perimetro = 2 * radio * PI;
+  const area = radio * radio * PI;
   console.log(`El perímetro de la circunferencia es : ${perimetro} ${unidad}`);
   console.log(`El área de la circunferencia es : ${area} ${unidad}²`);
 }
