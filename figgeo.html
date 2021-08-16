@@ -11,10 +11,94 @@
       <h1>
       Figuras geométricas
       </h1>
+      <p>Este es el primer taller del curso práctico de JavaScript</p>
     </header>
     <section>
-      <h2></h2>
+      <h2>Calcula el área y perímetro de un cuadrado</h2>
+      <form>
+        <label for="InputLadoCuadrado">Escribe la medida de un lado de tu cuadrado.</label>
+        <input id="InputLadoCuadrado" type="number">
+
+        <label for="InputUnidadCuadrado">Escribe la unidad de medida del lado de tu cuadrado.</label>
+        <input id="InputUnidadCuadrado">
+
+        <button type="button" onclick="cuadrado()">
+          Calcular el área y perímetro
+        </button>
+      </form>
     </section>
+    <section>
+      <h2>Calcula el área y perímetro de un Rectángulo</h2>
+      <form>
+        <label for="InputBaseRectangulo">Escribe la medida de la base de tu rectángulo.</label>
+        <input id="InputBaseRectangulo" type="number">
+
+        <label for="InputAlturaRectangulo">Escribe la medida de la altura de tu rectángulo.</label>
+        <input id="InputAlturaRectangulo" type="number">
+
+        <label for="InputUnidadRectangulo">Escribe la unidad de medida del lado de tu cuadrado.</label>
+        <input id="InputUnidadRectangulo">
+
+        <button type="button" onclick="rectangulo()">
+          Calcular el área y perímetro
+        </button>
+      </form>
+    </section>
+    <section>
+      <h2>Calcula el área y perímetro de un triángulo</h2>
+      <form>
+        <label for="InputLadoTriangulo1">Escribe el primer lado de tu triángulo</label>
+        <input id="InputLadoTriangulo1" type="number">
+
+        <label for="InputLadoTriangulo2">Escribe el segundo lado de tu triángulo</label>
+        <input id="InputLadoTriangulo2" type="number">
+
+        <label for="InputLadoTriangulo3">Escribe el tercer lado de tu triángulo</label>
+        <input id="InputLadoTriangulo3" type="number">
+
+        <label for="InputUnidadTriangulo">Escribe la unidad de medida de los lados de tu triángulo.</label>
+        <input id="InputUnidadTriangulo">
+
+        <button type="button" onclick="triangulo()">
+          Calcular el área y perímetro
+        </button>
+      </form>
+    </section>
+    <section>
+      <h2>Calcula el área y perímetro de un círculo</h2>
+      <form>
+        <label for="InputRadio">Escribe la medida del radio.</label>
+        <input id="InputRadio" type="number">
+
+        <label for="InputUnidadCirculo">Escribe la unidad de medida del radio.</label>
+        <input id="InputUnidadCirculo">
+
+        <button type="button" onclick="circulo()">
+          Calcular el área y perímetro
+        </button>
+      </form>
+    </section>
+    <section>
+      <h2>Calcula la altura de un triángulo isóceles.</h2>
+      <form>
+        <label for="InputLadoIsoceles1">Escribe el primer lado de tu triángulo</label>
+        <input id="InputLadoIsoceles1" type="number">
+
+        <label for="InputLadoIsoceles2">Escribe el segundo lado de tu triángulo</label>
+        <input id="InputLadoIsoceles2" type="number">
+
+        <label for="InputLadoIsoceles3">Escribe el tercer lado de tu triángulo</label>
+        <input id="InputLadoIsoceles3" type="number">
+
+        <label for="InputUnidadIsoceles">Escribe la unidad de medida de los lados de tu triángulo.</label>
+        <input id="InputUnidadIsoceles">
+
+        <button type="button" onclick="isoceles()">
+          Calcular la altura
+        </button>
+      </form>
+    </section>
+
     <script src="./figgeo.js"></script>
     <select id="figure-selector" name="figure">
       <option value="es">Cuadrado</option>
