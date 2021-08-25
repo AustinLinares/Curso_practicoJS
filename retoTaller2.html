@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paso final de compra</title>
+</head>
+<body>
+  <header>
+    <h1>Finalizando compra</h1>
+    <p>Procederemos a realizar los últimos pasos para terminar la compra.</p>
+  </header>
+  <section>
+    <form>
+      <label for="inputPrecioSinDescuento">Ingresar el valor final de su compra.</label>
+      <input id="inputPrecioSinDescuento" type="number">
+
+      <label for="inputCuponDescuento">Ingresar un código de cupón si lo posee.</label>
+      <input id="inputCuponDescuento" style="text-transform: uppercase;">
+
+      <button type="button" onclick="cupon()">
+        Calcular el precio final con descuento
+      </button>
+
+      <button>
+        Realizar pago        
+      </button>
+      <p id="inputResultadoConDescuento"></p>
+    </form>
+  </section>
+  <script src="./retoTaller2.js"></script>
+</body>
+</html>
