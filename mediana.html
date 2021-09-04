@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mediana</title>
+</head>
+<body>
+  <header>
+    <h1>Mediana</h1>
+    <p>Este es el tercer taller del curso práctico de JavaScript</p>
+  </header>
+  <section>
+    <form>
+      <label for="InputArray">Ingresa un dato a la vez y calcula la mediana al final</label>
+      <input id="InputArray" type="number">
+
+      <button type="button" onclick="añadirDatoArray()">
+        Añade un dato
+      </button>
+
+      <button type="button" onclick="mediana()">
+        Calcula la mediana
+      </button>
+
+      <button>
+        Reinicia si tuviste un error o quieres calcular otra mediana
+      </button>
+      <p id="resultado"></p>
+    </form>
+  </section>
+  <script src="./mediana.js"></script>
+</body>
+</html>
